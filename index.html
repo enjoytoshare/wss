@@ -20,6 +20,7 @@
 	<script src="js/skel.min.js"></script>
 	<script src="js/util.js"></script>
 	<script src="js/respond.min.js"></script>
+	<script src="https://unpkg.com/valine@1.4.4/dist/Valine.min.js"></script>
 	<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
 </head>
 <body>
@@ -40,7 +41,7 @@
                             </li>
                             <li><a href="#friends" class="button">关于她</a>
                             </li>
-                            <li><a href="tencent://message/?uin=458091312&Site=uycool.com&Menu=yes" class="button">聊一聊</a>
+                            <li><a href="#say" class="button">聊一聊</a>
                             </li>
                         </ul>
                     </nav>
@@ -106,6 +107,32 @@
                         <li><a href="https://sogou.js.org" target="_blank" class="button">免费简图床</a>
                         </li>
                     </ul>
+                </div>
+            </div>
+        </article>
+	    
+	<article id="say" class="panel secondary inactive" style="display: none;">
+            <div class="image" style="background-image: url('images/image6.jpg'); background-position: center center;">
+                <img src="images/image6.jpg" alt="" data-position="center center" style="display: none;">
+            </div>
+            <div class="content">
+                <ul class="actions spinX">
+                    <li><a href="#home" class="button small back">返回</a>
+                    </li>
+                </ul>
+                <div class="inner">
+                    <header>
+                        <h2>聊一聊</h2>
+                        <blockquote>或者你可以在这这里分享你的一些过往，一些你难以忘记的人和事。</blockquote>
+                    </header>
+                 <div id="vcomments"></div>
+                 <script>
+                 new Valine({
+                          el: '#vcomments',
+                       appId: '1EKC2aPy1uXaQhlnxOxrKKWh-gzGzoHsz',
+                      appKey: 'E56Qie0kNxQm8LeY4WesHxUX'
+                           })
+                </script>
                 </div>
             </div>
         </article>
