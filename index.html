@@ -141,7 +141,7 @@
             </div>
         </article>
         <footer id="footer" class="">
-            <p class="copyright">&copy; 2017 — 2020 <a target="_blank" href="/">官仁有话说</a></p>
+            <p class="copyright">&copy; <div class="layui-card-header" align="center">本站已悄悄地运行了<a id="days">0</a>天</div></p>
         </footer>
     </div>
     <!--[if lte IE 8]><![endif]-->
@@ -244,6 +244,15 @@
                 }
             });
         })(jQuery);
+    </script>
+	
+    <script>
+      var s1 = '2018-01-15';//累计运行时间
+      s1 = new Date(s1.replace(/-/g, "/"));
+      s2 = new Date();
+      var days = s2.getTime() - s1.getTime();
+      var number_of_days = parseInt(days / (1000 * 60 * 60 * 24));
+      document.getElementById('days').innerHTML = number_of_days;
     </script>
 </body>
 
