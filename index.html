@@ -255,32 +255,6 @@
       document.getElementById('days').innerHTML = number_of_days;
     </script>
 	
-        <script type="text/javascript">
- 9         window.onload = function(){
-10             //屏蔽键盘事件
-11             document.onkeydown = function (){
-12                 var e = window.event || arguments[0];
-13                 //F12
-14                 if(e.keyCode == 123){
-15                     return false;
-16                 //Ctrl+Shift+I
-17                 }else if((e.ctrlKey) && (e.shiftKey) && (e.keyCode == 73)){
-18                     return false;
-19                 //Shift+F10
-20                 }else if((e.shiftKey) && (e.keyCode == 121)){
-21                     return false;
-22                 //Ctrl+U
-23                 }else if((e.ctrlKey) && (e.keyCode == 85)){
-24                     return false;
-25                 }
-26             };
-27             //屏蔽鼠标右键
-28             document.oncontextmenu = function (){
-29                 return false;
-30             }
-31         }
-32 
-33     </script>
 </body>
 
 </html>
