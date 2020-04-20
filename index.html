@@ -46,6 +46,8 @@
                             </li>
                             <li><a href="#chat-with" class="button">聊一聊</a>
                             </li>
+			    <li><button id="a" onclick="a();">测试啊</button>
+                            </li>
                         </ul>
                     </nav>
                     <ul class="icons">
@@ -257,7 +259,19 @@
       var number_of_days = parseInt(days / (1000 * 60 * 60 * 24));
       document.getElementById('days').innerHTML = number_of_days;
     </script>
-    <audio autoplay="autoplay">
+	
+    <script>   
+   function a(){
+     var audio = document.getElementById('music'); 
+     if(audio.paused){                 
+         audio.play();//audio.play();// 播放  
+     }
+     else{
+          audio.pause();// 暂停
+     } 
+   }
+</script>
+    <audio controls="controls" preload id="music" hidden>
       <source src='https://cdn.jsdelivr.net/gh/iguanren/wss/so%20weak.mp3' type='audio/mpeg'>
     </audio>
 </body>
